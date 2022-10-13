@@ -1,0 +1,303 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital@1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Roboto:ital@1&display=swap');
+
+html{
+    scroll-behavior: smooth;
+}
+body{
+    font-family: 'Roboto', sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+ul{
+    margin: 0;
+    padding: 0;
+}
+li{
+    list-style-type: None;
+}
+h2{
+    text-transform: uppercase;
+    text-align: center;
+    padding-top: 30px;
+    font-size: 2em;
+}
+a{
+    text-decoration: None;
+    color: black;
+
+}
+/* ******************************* NAVBAR *************************** */
+nav{
+    overflow: hidden;
+    background-color: darkgrey;
+    position: fixed;
+    width: 100%;
+    opacity: 0.9;
+}
+header li {
+    float: right;
+    font-size: 1.2em;
+}
+header li a {
+    text-decoration: none;
+    display: block;
+    text-align: center;
+    padding: 18px 16px;
+}
+#logo{
+    float: left;
+    font-family:'Anton', sans-serif;
+    font-weight: left;
+}
+
+/* ******************************* IMAGE PRINCIPALE *************************** */
+#imageprincipale {
+    padding-top: 60px;
+    background: url(Photos/Montblanc.JPG) no-repeat fixed 50% 50%;
+    background-size: cover;
+    height: 799px;
+}
+
+h1{
+    font-family: 'Anton', sans-serif;
+    color:azure;
+    text-align: center;
+    font-size: 6em;
+    margin-top: 110px;
+    text-shadow: 1px 3px 2px black;
+    
+}
+#premiertrait{
+    height: 2px;
+    width: 25%;
+    margin: -3px auto;
+    background-color:aliceblue;
+    box-shadow: 1px 3px 2px black;
+}
+h3{
+    color: azure;
+    text-align: center;
+    font-size: 3em;
+    text-shadow: 1px 3px 2px black;
+}
+
+/* ******************************* PRESENTATION *************************** */
+#présentation{
+    background-color: darkgray;
+    padding: 10px 0px 100px 0;
+}
+
+#textintro{
+    padding: 0px 20%;
+}
+
+#prestations h4 {
+    font-family: 'Anton', sans-serif ;
+    text-transform: uppercase;
+    font-size: 1.8em;
+    margin-left: 30%;
+    margin-bottom: 5%;
+    margin-top: 5%;
+    float: center;
+}
+
+h4:hover{;
+    transform: scale(1.5)
+}
+
+.imagesprestations1{
+    display: flex;
+    width: 500px;
+    height: 500px;
+    animation-duration: 10s;
+    animation-name: pourvosexterieurs;
+    animation-iteration-count: infinite;
+    box-shadow: 6px 6px 28px -1px rgba(0,0,0,0.75);
+    
+}
+.imagesprestations2{
+    display: flex;
+    height: 500px;
+    overflow: 500px;
+    animation-duration: 10s;
+    animation-name: pourvosexterieurs;
+    animation-iteration-count: infinite;
+    box-shadow: 6px 6px 28px -1px rgba(0,0,0,0.75);
+}
+.imagesprestations3{
+    display: flex;
+    height: 500px;
+    overflow: 500px;
+    animation-duration: 10s;
+    animation-name: pourvosexterieurs;
+    animation-iteration-count: infinite;
+    box-shadow: 6px 6px 28px -1px rgba(0,0,0,0.75);
+}
+.imagesprestations4{
+    display: flex;
+    height: 500px;
+    overflow: 500px;
+    animation-duration: 10s;
+    animation-name: pourvosexterieurs;
+    animation-iteration-count: infinite;
+    box-shadow: 6px 6px 28px -1px rgba(0,0,0,0.75);
+}
+
+
+
+
+
+@keyframes pourvosexterieurs {
+    0%{
+        transform: translateX(0);
+    }
+    25%{
+        transform: translateX(-700px);
+    }
+    50%{
+        transform: translateX(-1300px);
+    }
+    75%{
+        transform: translateX(-2000px);
+    }
+    100%{
+        transform: translateX(0);
+    }
+    
+}
+
+
+/* ******************************* FOOTER *************************** */
+
+#lieux{
+    background-color: darkgray;
+    padding : 20px 0 10px 0;
+}
+
+#troisiemetrait {
+    height: 1px;
+    width: 75%;
+    background-color: bisque;
+    margin : 60px auto;
+
+}
+
+footer{
+    background-color:dimgray;
+    color: aliceblue;
+    padding : 20px 0 10px 0;
+    text-align: center;
+}
+
+form{
+    margin: 0 auto;
+    max-width: 900px;
+    
+}
+input, textarea, button {
+    border : none;
+    width: 55%;
+    padding : 15px 10px;
+    margin: 1px 0;
+    font-size: 1.2em;
+    font-family: 'Roboto' sans-serif;
+    border-radius: 8px;
+
+}
+
+textarea {
+    height: 120px;
+    font-family: 'Roboto' sans-serif;
+}
+button{
+    font-size: 1.5em;
+    background-color: bisque;
+
+}
+button:hover{
+    background-color:ghostwhite;
+    cursor: pointer;
+    transition: 0.3s  ease-in-out;
+
+}
+#moi{
+    font-family: 'Roboto' sans-serif;
+    font-size: 1em;
+    height: 1px;
+    width: 75%;
+    margin : 60px auto;
+}
+
+#deuxiemetrait {
+    height: 1px;
+    width: 75%;
+    background-color: bisque;
+    margin : 60px auto;
+
+}
+
+#copyrighteticons {
+    display: flex;
+    margin-bottom: 20px;
+    padding: 0 10%;
+
+}
+
+#copyright{
+    width: 50%;
+    text-align: left;
+    color: aliceblue;
+
+}
+#icons{
+    width: 50%;
+    text-align: right;
+}
+
+#icons a {
+    display: inline-block;
+    padding: 0 15px;
+    font-size: 1.3em;
+    color: aliceblue;
+}
+
+#icons a:hover{
+    transform: scale(1.5);
+    transition: 0.1s;
+
+}
+/* ******************************* INDEX1 *************************** */
+#exterieurhtml{
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.3em;
+    background-color: darkgray;
+    padding: 10px 0px 100px 0;
+}
+
+#exterieurhtml h4 {
+    font-family: 'Anton', sans-serif ;
+    text-transform: uppercase;
+    font-size: 1.8em;
+    margin: 5%;
+    float: center;
+}
+
+#exterieurhtml p{
+    padding: 0px 20%;
+}
+
+#exterieurhtml button{
+    font-size: 1.5em;
+    background-color: bisque;
+    margin-left: 300px;
+    margin-top: 50px;
+
+}
+
+#exterieurhtml button:hover{
+    background-color:ghostwhite;
+    cursor: pointer;
+    transition: 0.3s  ease-in-out;
+}
